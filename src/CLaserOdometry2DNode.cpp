@@ -72,6 +72,8 @@ CLaserOdometry2DNode::CLaserOdometry2DNode(): Node("CLaserOdometry2DNode")
   // Init variables
   rf2o_ref.module_initialized = false;
   rf2o_ref.first_laser_scan   = true;
+
+  RCLCPP_INFO(get_logger(), "RF20 node initialized. publish_tf is: [%s]", publish_tf ? "true" : "false");
 }
 
 
